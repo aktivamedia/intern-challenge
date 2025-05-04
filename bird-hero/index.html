@@ -4,15 +4,40 @@
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Bird Hero Challenge</title>
-
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+  <link rel="preload" as="image" href="/imgs/flying-owl-mobile.webp">
+  <link rel="preload" as="image" href="/imgs/flying-owl-desktop.webp" media="(min-width: 1024px)">
+  <link rel="stylesheet" href="style.css">
   <!-- Tailwind CDN para un setup rápido -->
-  <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="styles.css" />
+  <script src="https://cdn.tailwindcss.com" ></script>
+  
 </head>
-<body class="antialiased text-slate-800">
+<body class="overflow-x-hidden">
+      <!--Aca hice un div para toda la seccion del hero y como bg esta la imagen con laos detalles para mobile primero-->
+      <div class="relative mb-10 w-screen h-[446px] bg-cover bg-center bg-[url('/imgs/flying-owl-mobile.webp')] lg:h-[512px] lg:bg-[url('/imgs/flying-owl-desktop.webp')]">
+      </div>
+      <div class=" h-[450px] p-8 mt-[150px] min-[436px]:mt-10 sm:top-[-445px] lg:relative lg:top-[-460px]  lg:left-[107px] lg:w-[608px] lg:p-0">
+          
+        <div class="flex flex-col justify-center h-[236px] space-y-[10px] pb-[30px]">
+          <h1 class="text-5xl font-bold leading-[120%] tracking-[-0.96px]">
+            Gear Up for Your <br> Next Birding Adventure
+          </h1>
+          <p class="text-[20px] leading-[120%] text-[#0C0C0D] font-normal">
+            From lightweight binoculars and field guides to weather-proof apparel,<br>
+            we've curated everything you need to get closer to nature’s most colorful creatures.
+          </p>
+         
+        </div>
+        <div>
+          <button role="button" aria-label="Shop Now" class="relative w-[135px] h-[52px] p-3 bg-[#2C2C2C] text-white mt-[100px] min-[436px]:mt-10 lg:mt-0 rounded-lg">
+            Shop Now
+          </button>
+        </div>
+      </div>
+      
 
-  <!-- TODO: Hero Section hero
-  -->
-
-</body>
+  </body>
 </html>
